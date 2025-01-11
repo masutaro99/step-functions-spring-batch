@@ -9,7 +9,7 @@ new EcrRepositoryStack(app, "EcrRepositoryStack", {
 });
 new StepFunctionsSpringBatchStack(app, "StepFunctionsSpringBatchStack", {
   repositoryName: "spring-batch-sample-app",
-  imageTag: "a847907", // Specify the image tag of the Docker image to use
+  imageTag: "3081346", // Specify the image tag of the Docker image to use
   batchSchedule: "cron(0 23 * * ? *)", // JST
   maxRetryCount: 3,
   // notificationEmail: [""],
